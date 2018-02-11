@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="jquerywebsitecss/style.css">
+    <style type="text/css">
+    </style>
+
+               
+                    <!-- Animate css -->
+                    <link rel="stylesheet" href="jquerywebsitecss/animate.css">
+                      <!-- Fontawesome css -->
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <!-- Main css -->
+                       
+                          <!-- SCRIPTS -->
+                          <!-- jQuery library -->
+                          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                          <!-- Latest compiled JavaScript -->
+                          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                          <!-- Magnific Popup core JS file -->
+                      
+                          <script src="jquerywebsitejs/wow.min.js"></script>
+                          <script>
+              new WOW().init();
+              </script>
+                          
+
+    <title>Facebook Profile and Feed Fetch using JQuery and Json</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="container-fluid">
+<div class="row">
+            <div class="col-md-12" style="text-align:center;"><b>A cool Jquery app to display Facebook user information and posts <br><br>
+       </div>
+
+      <div class="row">
+            <div class="col-md-12" style="text-align:center;"><b>In case of any errors please click here to <a href="https://developers.facebook.com/tools-and-support/" target="_blank">Activate facebook user acces token</a><br><br>
+       </div> 
+
+     </div>
+<div class="row">
+       
+
+      <div class="col-md-12" style="text-align:center;"><b>    Please make sure that you facebook token is not expired before clicking on the below button  </b></div>
+        
+        </div>
+
+          <div class="row">
+ <div class="col-md-12  margin-top margin-bottom wow fadeInUp" data-wow-delay="0.6s" style="text-align:center;">  <button class="btn btn-primary" id="facebookBtn" href="#">Click here to get my facebook info</button></div>
+  
+           </div>
+         
+        </div>
+        <div id="mainbox">
+            <div class="col-md-10  container-fluid">
+              <h2 class="wow fadeInUp" data-wow-delay="0.4s" style="color: darkblue"><b>Profile Page</b></h2>
+                <div class="well">
+                    <div class="row">
+
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="1s">
+                            <p id="myProfilePicLarge"></p>
+                        </div>
+                        <div class="col-md-8 myFbInfo">
+                            <h1 class="wow fadeInUp" data-wow-delay="0.6s"><small style="color:black">Your Name: </small>"<span id="myFbName"></span>"</h1>
+                            <div class="fbUserInfo"><div class="wow fadeInUp margin-bottom-small" data-wow-delay="0.6s">Your Email: "<b><span id="myEmail"></span></b>"</div>
+                                <div class="wow fadeInUp margin-bottom-small" data-wow-delay="0.8s">Your Profile ID: "<b><span id="myProfileId"></span></b>"</div>
+                                <div class="wow fadeInUp margin-bottom-small" data-wow-delay="1s">Your HomeTown: "<b><span id="myHomeTown"></span></b>"</div>
+                                <div class="wow fadeInUp margin-bottom-small" data-wow-delay="1.2s">Your Current Location: "<b><span id="myLocation"></span></b>"</div>
+                                <div class="wow fadeInUp margin-bottom-small" data-wow-delay="1.4s">Your Gender: "<b><span id="myGender"></span></b>"</div>
+                                 
+                                   <div class="wow fadeInUp margin-bottom-small" data-wow-delay="1.8s">Your Birthday: "<b><span id="Birthday"></span></b>"</div>
+                                    <h3 class="wow fadeInUp margin-top margin-bottom"  data-wow-delay="2s">Your Education details are as below<b><span id="Education"></span></b></h3>
+                                    <div class="fbEdu wow fadeInUp" data-wow-delay="2.4s"></div>
+                                     <h3 class="wow fadeInUp margin-top margin-bottom"  data-wow-delay="2.6s">Your Work History details are as below<b><span id="work"></span></b></h3>
+                                    <div class="fbWork wow fadeInUp" data-wow-delay="2.8s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-12">
+
+            <div id="mainbox">
+
+                <div class="card">
+  <h2 style="color: darkblue" class="wow fadeInUp" data-wow-delay="3s"><b>Feeds Page</b></h2>
+                    <h2 class="center-block posth2 wow fadeInUp" data-wow-delay="3.2s">Your Last 20 Facebook Posts </h2>
+                    <div class="fbFeed wow fadeInUp" data-wow-delay="3.4s"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    
+    <script type="text/javascript" src="jquerywebsitejs/myApp.js"></script>
+  
+   
+</body>
+
+</html>
